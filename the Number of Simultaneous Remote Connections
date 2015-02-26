@@ -1,1 +1,17 @@
 
+So we want to allow unlim or more than 2 simultaneous rdp connections to a host.
+Host is windows server 2008 r2. 
+
+usually one goes to tsconfig.msc (..windows\system32\)
+and there under connections, in properties, in network adapter tab
+maximum connections is 2, if no RD Session Host Role Service has been installed.
+
+so we have to install RD Session Host Role Service.
+for this we go to servermanager.msc (..windows\system32),
+there we add a role Remote Desktop Services,
+and in properties, we set licencing mode to per device,
+manage groups and users, then install and reboot,
+then we should cpecify licence server - add one and done.
+then usually maximum connections is unlim.
+
+that`s it.
