@@ -43,3 +43,9 @@ Overall:
 --builders (list of commands to build a piece of software from a piece of code and run tests)
 --buildslaves (a platform to build and run tests on)
 
+3. configs
+
+4. layout
+
+5. execution order
+
