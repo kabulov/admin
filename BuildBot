@@ -19,6 +19,11 @@ master.cfg
 6. 
 info and configs on buildslaves
 
+BuildBot parts:
+
+1. 
+http://docs.buildbot.net/current/manual/index.html
+
 Overall:
 
 1. process 
@@ -44,8 +49,25 @@ Overall:
 --buildslaves (a platform to build and run tests on)
 
 3. configs
+on server
+-master.cfg
+-repo itself
+-hgserver config
+-apache config
+on buildslave
+-/home/buildbot (e.g. buildbot.tac - admin)
 
 4. layout
+server : nightly, forced, homedir, repo, ip and port, builders, urls, notify
+-scheduler
+buildslave : tests, execution dirs, build dirs, pull dirs
+-super slave
+-win slave
+-lin slave
 
 5. execution order
-
+-cron(or force)
+-scheduler(described in master.cfg)
+-builder
+-buildslave
+-scripts : hg pull(mercurial), cmake, compile(visual studio), run tests(python)
