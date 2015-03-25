@@ -1,5 +1,6 @@
 
 what does usually admin do at our office:
+
 -order hardware, printer parts, etc.
 -maintain legacy hardware (motherboards, harddisks, soundcards, videocards, cd/dvd-roms, etc...)
 -maintain hardware (current computers)
@@ -9,4 +10,11 @@ what does usually admin do at our office:
 -maintain wiki (contribute, change obsolete parts)
 -maintain virtual machines for testers (sun virtualbox used)
 -maintain server on fastvps 
+-maintain super1 - when super1 goes down, usually reboot, try reduce overheating, use temperature monitors, etc.
+-sometimes internet connection issues, just reboot router, or wait until provider responds
+-distribute rights on hosts to users
+-maintain memory usage on hosts, use scanner.exe
+-remote desktop issues
+-reinstall operating system, or other software
+-learn gentoo, ssh to clare, linbb
 -help technical writers - printers, scanner, pdf split and merge, microsoft office issues
