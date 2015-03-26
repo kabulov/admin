@@ -1,0 +1,8 @@
+
+http://trac.buildbot.net/ticket/187
+http://trac.buildbot.net/attachment/ticket/187/mercurial-named-branches-in-step.diff
+http://comments.gmane.org/gmane.comp.python.buildbot.devel/8452
+http://sourceforge.net/p/buildbot/mailman/message/29615502/
+
+so i had to make changes to 1010 line of 
+/usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:1010
