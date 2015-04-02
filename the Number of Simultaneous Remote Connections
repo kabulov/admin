@@ -13,7 +13,8 @@ role services set to 'remote desktop session host',
 set 'do not require network level authentication',
 and in 'properties', we set 'licencing mode' to 'per device',
 manage groups and users, then install and reboot,
-then we should cpecify 'licence server' - add one and done.
+then we should cpecify 'licence server' - add one and done 
+(in tsconfig.msc->edit settings->licensing->remote desktop licencse servers)
 then usually 'maximum connections' is unlim.
 
 that`s it.
