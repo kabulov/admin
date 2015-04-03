@@ -7,4 +7,6 @@ http://sourceforge.net/p/buildbot/mailman/message/29615502/
 so i had to make changes to 1010 line of 
 /usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:1019
 /usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:958
+/usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:993
+/usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:994
 
