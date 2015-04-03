@@ -14,3 +14,7 @@ so i had to make changes to 1010 line of
 
 Now solved: one has to change these last 4 lines to make hg pull from
 repo one wants !!
+
+also
+cd /var/lib/buildmaster/
+buildbot checkconfig
