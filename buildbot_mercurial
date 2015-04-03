@@ -6,14 +6,27 @@ http://sourceforge.net/p/buildbot/mailman/message/29615502/
 
 so i had to make changes to 1010 line of 
 /usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:1019
-
+________________________________________________________________________________
 /usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:957
 /usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:958
+these are :
+class Mercurial(SlaveSource):
+..
+def __init__(self,..., 
+              defaultBranch=None -> here change None => 'branch you want' $$not necessary if 'inrepo' enabled
+              branchType=None -> here change None => 'inrepo'
 /usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:993
 /usr/lib64/python2.7/site-packages/buildbot/steps/source/oldsource.py:994
+these are:
+class Mercurial(SlaveSource):
+..
+def __init__(..
+self.branch=defaultBranch -> here change deafultBranch => 'branch you want'  ##not nec if 'inrepo' enabled
+self.branchType=branchType -> here change branchType => 'inrepo'
 
-Now solved: one has to change these last 4 lines to make hg pull from
+Now solved: one has to change these last several lines to make hg pull from
 repo one wants !!
+__________________________________________________________________________________
 
 also
 cd /var/lib/buildmaster/
